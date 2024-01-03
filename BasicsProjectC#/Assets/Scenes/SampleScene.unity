@@ -536,6 +536,79 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 751894293}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &807657771
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 338518928127116640, guid: 70e76015137c4074ca2fbff86c4466ea,
+        type: 3}
+      propertyPath: m_Name
+      value: Dart
+      objectReference: {fileID: 0}
+    - target: {fileID: 3886412190693378753, guid: 70e76015137c4074ca2fbff86c4466ea,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3886412190693378753, guid: 70e76015137c4074ca2fbff86c4466ea,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 3886412190693378753, guid: 70e76015137c4074ca2fbff86c4466ea,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 3886412190693378753, guid: 70e76015137c4074ca2fbff86c4466ea,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.481
+      objectReference: {fileID: 0}
+    - target: {fileID: 3886412190693378753, guid: 70e76015137c4074ca2fbff86c4466ea,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3886412190693378753, guid: 70e76015137c4074ca2fbff86c4466ea,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3886412190693378753, guid: 70e76015137c4074ca2fbff86c4466ea,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3886412190693378753, guid: 70e76015137c4074ca2fbff86c4466ea,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3886412190693378753, guid: 70e76015137c4074ca2fbff86c4466ea,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3886412190693378753, guid: 70e76015137c4074ca2fbff86c4466ea,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3886412190693378753, guid: 70e76015137c4074ca2fbff86c4466ea,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 70e76015137c4074ca2fbff86c4466ea, type: 3}
 --- !u!1001 &821744159
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -901,6 +974,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1069457805}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1188288777
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188288778}
+  m_Layer: 0
+  m_Name: DartSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1188288778
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188288777}
+  m_LocalRotation: {x: -0, y: 0.25518852, z: -0, w: 0.96689135}
+  m_LocalPosition: {x: -0.01, y: 1.06, z: 0.75}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1607869214}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 29.57, z: 0}
 --- !u!1001 &1213666912
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1339,6 +1443,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4464315006879710486}
+  - {fileID: 1188288778}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -62.685, z: 0}

@@ -6,6 +6,9 @@ public class PlayerController : MonoBehaviour
 {
     public float speed = 5f;
 
+    public GameObject dartPrefab;
+    public Transform dartSpawnPoint;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +25,10 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             gameObject.transform.Translate(Vector3.right * Time.deltaTime * speed);
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(dartPrefab, dartSpawnPoint.position, dartSpawnPoint.rotation);
         }
     }
 }
