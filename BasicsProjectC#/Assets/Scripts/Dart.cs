@@ -22,8 +22,9 @@ public class Dart : MonoBehaviour
         if (collision.gameObject.CompareTag("Balloon"))
         {
             Debug.Log("Hit");
+            GameManager.Instance.BaloonPopped();
             Destroy(collision.gameObject);
-
+            Destroy(gameObject);
         }
     }
 }
