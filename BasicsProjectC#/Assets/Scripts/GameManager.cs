@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
@@ -6,11 +7,12 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+    public static Action BalloonPopped;
 
     public int balloonsInScene;
     public int poppedBalloons = 0;
 
-    void Start()
+    void Awake()
     {
         if (Instance == null)
         {
@@ -21,9 +23,16 @@ public class GameManager : MonoBehaviour
             Destroy(this);
         }
         balloonsInScene = GameObject.FindGameObjectsWithTag("Balloon").Length;
+
+        BalloonPopped += OnBaloonPopped;
     }
 
-    public void BaloonPopped()
+    private void OnDestroy()
+    {
+        BalloonPopped -= OnBaloonPopped;
+    }
+
+    public void OnBaloonPopped()
     {
         poppedBalloons++;
         if (poppedBalloons >= balloonsInScene)
