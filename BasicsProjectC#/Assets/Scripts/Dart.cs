@@ -6,6 +6,8 @@ public class Dart : MonoBehaviour
 {
     public float speed = 10f;
 
+    public GameObject balloonPoppedParticles;
+
     void Start()
     {
         Destroy(gameObject, 5f);
@@ -23,6 +25,7 @@ public class Dart : MonoBehaviour
         {
             Debug.Log("Hit");
             GameManager.Instance.BaloonPopped();
+            Instantiate(balloonPoppedParticles, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }

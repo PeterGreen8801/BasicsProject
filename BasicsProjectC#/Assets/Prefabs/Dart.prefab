@@ -48,6 +48,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  balloonPoppedParticles: {fileID: 8838145811041620667, guid: e5babc3a82f9cb547ab941753395c6b1,
+    type: 3}
 --- !u!136 &5976980218445755282
 CapsuleCollider:
   m_ObjectHideFlags: 0
