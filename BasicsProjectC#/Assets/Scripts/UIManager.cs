@@ -8,6 +8,8 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager Instance;
     public TextMeshProUGUI baloonsPoppedUI;
+    public CanvasGroup winPanel;
+    public float fadeSpeed = 1f;
 
     // Start is called before the first frame update
     void Start()
@@ -31,9 +33,13 @@ public class UIManager : MonoBehaviour
         baloonsPoppedUI.text = GameManager.Instance.poppedBalloons + "/" + GameManager.Instance.balloonsInScene;
     }
 
-    // Update is called once per frame
-    void Update()
+    public IEnumerator ShowWinPanel()
     {
+        while (winPanel.alpha < 1)
+        {
+            winPanel.alpha += Time.deltaTime * fadeSpeed;
 
+            yield return new WaitForEndOfFrame();
+        }
     }
 }
